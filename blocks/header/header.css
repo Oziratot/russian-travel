@@ -1,22 +1,25 @@
 @import url(./__lang/header__lang.css);
 @import url(./__lang-link/header__lang-link.css);
 @import url(./__logo/header__logo.css);
+@import url(./__lang-link/_active/header__lang-link_active.css);
+@import url(./__link-item/header__link-item.css);
 
 .header {
   padding-top: 28px;
-  max-height: 52px;
-  width: 90%;
+  max-width: 1184px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1279px) {
+  .header {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .header {
-    max-height: 42px;
-    width: 90%;
     padding-top: 16px;
-    margin: 0 auto;
-
   }
 }
